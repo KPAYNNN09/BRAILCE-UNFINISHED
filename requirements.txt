@@ -1,0 +1,32 @@
+# ==============================================================================
+# Brailce – Python Dependencies
+# ==============================================================================
+#
+# Install with:
+#     pip install -r requirements.txt
+#
+# SYSTEM-LEVEL DEPENDENCIES (not installed via pip):
+#   - Piper voice files: the ONNX model and its .onnx.json sidecar
+#                        at the path configured by speech.model_path.
+#
+#   - Ollama     : Local LLM inference server
+#                  https://ollama.ai
+#                  Install and run: ollama serve
+#                  Pull a model:    ollama pull <model_name>
+#
+# HARDWARE-ONLY DEPENDENCIES (NOT required for laptop simulation):
+#   - gpiozero   : Raspberry Pi GPIO control (pip install gpiozero)
+#   - spidev     : SPI interface for TFT display (pip install spidev)
+#   - Pillow     : Image rendering for TFT (pip install Pillow)
+#
+# ==============================================================================
+
+# --- Core Dependencies ---
+keyboard>=0.13.5          # Cross-platform keyboard event capture
+piper-tts>=1.2.0           # Persistent offline Piper neural TTS API
+
+# --- Testing ---
+pytest>=7.0
+
+# --- Optional: AI Client ---
+# requests>=2.28           # HTTP client for Ollama API (uncomment if needed)

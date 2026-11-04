@@ -1,0 +1,11 @@
+[
+    { "character": ".", "braille_dots": [2, 5, 6], "braille_unicode": "⠲", "category": "PUNCTUATION", "speech": "period" },
+    { "character": ",", "braille_dots": [2], "braille_unicode": "⠂", "category": "PUNCTUATION", "speech": "comma" },
+    { "character": "!", "braille_dots": [2, 3, 5], "braille_unicode": "⠖", "category": "PUNCTUATION", "speech": "exclamation mark" },
+    { "character": "?", "braille_dots": [2, 3, 6], "braille_unicode": "⠦", "category": "PUNCTUATION", "speech": "question mark" },
+    { "character": "'", "braille_dots": [3], "braille_unicode": "⠄", "category": "PUNCTUATION", "speech": "apostrophe" },
+    { "character": "\"", "braille_dots": [2, 3, 5, 6], "braille_unicode": "⠶", "category": "PUNCTUATION", "speech": "quote" },
+    { "character": ":", "braille_dots": [2, 5], "braille_unicode": "⠒", "category": "PUNCTUATION", "speech": "colon" },
+    { "character": ";", "braille_dots": [2, 3], "braille_unicode": "⠆", "category": "PUNCTUATION", "speech": "semicolon" },
+    { "character": "#", "braille_dots": [3, 4, 5, 6], "braille_unicode": "⠼", "category": "PUNCTUATION", "speech": "number sign" }
+]

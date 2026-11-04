@@ -1,0 +1,12 @@
+[
+    { "character": "1", "braille_dots": [2], "braille_unicode": "⠂", "category": "DIGIT", "speech": "one" },
+    { "character": "2", "braille_dots": [2, 3], "braille_unicode": "⠆", "category": "DIGIT", "speech": "two" },
+    { "character": "3", "braille_dots": [2, 5], "braille_unicode": "⠒", "category": "DIGIT", "speech": "three" },
+    { "character": "4", "braille_dots": [2, 5, 6], "braille_unicode": "⠲", "category": "DIGIT", "speech": "four" },
+    { "character": "5", "braille_dots": [2, 6], "braille_unicode": "⠢", "category": "DIGIT", "speech": "five" },
+    { "character": "6", "braille_dots": [2, 3, 5], "braille_unicode": "⠖", "category": "DIGIT", "speech": "six" },
+    { "character": "7", "braille_dots": [2, 3, 5, 6], "braille_unicode": "⠶", "category": "DIGIT", "speech": "seven" },
+    { "character": "8", "braille_dots": [2, 3, 6], "braille_unicode": "⠦", "category": "DIGIT", "speech": "eight" },
+    { "character": "9", "braille_dots": [3, 5], "braille_unicode": "⠔", "category": "DIGIT", "speech": "nine" },
+    { "character": "0", "braille_dots": [3, 5, 6], "braille_unicode": "⠴", "category": "DIGIT", "speech": "zero" }
+]

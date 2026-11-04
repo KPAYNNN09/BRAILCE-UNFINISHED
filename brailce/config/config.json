@@ -1,0 +1,86 @@
+{
+    "system": {
+        "simulation_mode": true,
+        "debug": false,
+        "log_level": "INFO"
+    },
+
+    "input": {
+        "device": "keyboard"
+    },
+
+    "braille": {
+        "mapping_files": [
+            "brailce/braille/mappings/letters.json",
+            "brailce/braille/mappings/numbers.json",
+            "brailce/braille/mappings/punctuation.json",
+            "brailce/braille/mappings/math.json"
+        ],
+        "load_nemeth": false
+    },
+
+    "speech": {
+        "enabled": true,
+        "engine": "piper",
+        "behavior": "character_and_word",
+        "model_path": "~/piper/en_US-ryan-medium.onnx",
+        "speaker_id": null,
+        "length_scale": 1.08,
+        "noise_scale": 0.5,
+        "noise_w": 0.6,
+        "sentence_silence": 0.2,
+        "leading_silence_ms": 100,
+        "trailing_silence_ms": 150,
+        "volume": 100,
+        "digit_token_mode": "number",
+        "speak_each_character": true,
+        "speak_words": true,
+        "speak_control_events": false,
+        "max_queue_size": 50
+    },
+
+    "sound": {
+        "enabled": false,
+        "volume": 0
+    },
+
+    "display": {
+        "driver": "auto",
+        "show_braille_unicode": true,
+        "show_braille_dots": true,
+        "show_braille_visual": true
+    },
+
+    "ai": {
+        "enabled": true,
+        "host": "http://127.0.0.1:11434",
+        "model": "liquidai/lfm2.5-1.2b-instruct",
+        "timeout_seconds": 15,
+        "max_response_tokens": 80,
+        "temperature": 0.5,
+        "system_prompt": "You are Brailce, a friendly voice assistant for Grade 1 Braille learners. Answer ONLY the user's actual question in 1 to 2 short, complete sentences. Never mention math unless the user asks a math question. Always finish your sentence completely."
+    },
+
+    "logging": {
+        "enabled": true,
+        "log_directory": "logs",
+        "csv_filename_prefix": "brailce_session",
+        "log_characters": true,
+        "log_mode_changes": true,
+        "log_ai_interactions": true,
+        "log_errors": true,
+        "record_timing": true
+    },
+
+    "power": {
+        "driver": "simulated"
+    },
+    
+    "vision": {
+        "driver": "auto",
+        "model_path": "brailce/vision/yolov8_braille.pt",
+        "confidence_threshold": 0.16,
+        "iou_threshold": 0.45,
+        "test_image_path": ""
+    }
+}

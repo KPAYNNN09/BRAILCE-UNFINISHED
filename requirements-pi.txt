@@ -1,0 +1,18 @@
+# ==============================================================================
+# Brailce – Raspberry Pi 5 Hardware Dependencies
+# ==============================================================================
+#
+# Install on the Raspberry Pi inside your virtual environment:
+#     pip install -r requirements-pi.txt
+#
+piper-tts>=1.2.0
+
+# Display Driver (ILI9488 3.5" TFT SPI Direct Drive)
+luma.lcd>=2.9.0
+luma.core>=2.4.0
+spidev>=3.6
+Pillow>=9.0.0
+
+# Raspberry Pi 5 GPIO Controller (RP1 Southbridge compatible)
+rpi-lgpio>=0.6
+gpiozero>=2.0

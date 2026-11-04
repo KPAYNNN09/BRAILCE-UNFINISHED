@@ -1,0 +1,1 @@
+"""Brailce – AI assistant module."""

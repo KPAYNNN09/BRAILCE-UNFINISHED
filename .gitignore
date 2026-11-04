@@ -1,0 +1,101 @@
+# ==========================================
+# Brailce .gitignore - Assistive Device Project
+# ==========================================
+
+# 1. Videos & Media (prevents exceeding GitHub repository limits)
+*.mp4
+*.mkv
+*.avi
+*.mov
+*.wmv
+*.flv
+*.webm
+video.mp4
+video_360p.mp4
+
+# 2. Archives & Compressed Bundles
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+brailce_update.zip
+
+# 3. Video Frame Extraction Folders & Image Scans
+frames_360p/
+video_frames/
+sub_scans/
+
+# 4. Scraped YouTube Research & Transcript Files
+scotto_details.json
+video_page.html
+ytInitialData.json
+playerResponse.json
+transcript_scotto.json
+transcript_scotto.txt
+yt_contents_extracted.txt
+yt_details.json
+yt_info_extracted.txt
+*scotto*
+*ytInitialData*
+*playerResponse*
+
+# 5. Large Neural Model Weights (>50MB GitHub Warning / 100MB Limit)
+# Note: YOLOv8 Braille weights are automatically fetched on first scan
+*.pt
+*.pth
+*.onnx
+*.tflite
+*.weights
+brailce/vision/yolov8_braille.pt
+
+# 6. Python Bytecode, Caches & Testing Artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+
+# 7. Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# 8. Temporary Files, Logs & Scratch Scripts
+logs/
+*.log
+*.tmp
+scratch/
+scratch_*.py
+
+# 9. Credentials and private keys
+.env
+.env.*
+!.env.example
+*.pem
+*.ppk
+id_rsa
+id_ed25519
+known_hosts
+
+# 10. IDEs, Editors & OS System Files
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.gemini/

@@ -1,0 +1,1 @@
+"""Brailce – Configuration module."""
